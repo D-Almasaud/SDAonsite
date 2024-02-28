@@ -59,13 +59,14 @@ public class Challange
         String postalCode = faker.address().zipCode();
         String country = faker.address().country();
 
-        String birthday ="2000-12-12";
+
 
 
 
         // Fill form inputs
         driver.findElement(By.id("firstName")).sendKeys(firstName);
         driver.findElement(By.id("lastName")).sendKeys(lastName);
+        driver.findElement(By.id("birthdate")).sendKeys("2000-12-12");
         driver.findElement(By.id("email")).sendKeys(email);
         driver.findElement(By.id("phone")).sendKeys("12345678");
         driver.findElement(By.id("street1")).sendKeys(address1);
@@ -74,14 +75,13 @@ public class Challange
         driver.findElement(By.id("stateProvince")).sendKeys(state);
         driver.findElement(By.id("postalCode")).sendKeys(postalCode);
         driver.findElement(By.id("country")).sendKeys(country);
-        driver.findElement(By.id("birthdate")).sendKeys(birthday);
+
 
         // Click on submit button
         driver.findElement(By.xpath("//*[@id=\"submit\"]")).click();
 
         // Additional: Verify if contact has been created successfully
-        // You can add assertions or verifications here based on the expected output
-       // Assert.assertTrue("User is directed to create contact page successfully", driver.getCurrentUrl().contains("/contact/"));
+      //  Assert.assertEquals("User is directed to create contact page successfully","Contact List App", driver.getTitle());
 
     }
 
