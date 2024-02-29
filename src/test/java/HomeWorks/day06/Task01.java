@@ -34,9 +34,8 @@ import java.util.List;
             driver.get("https://the-internet.herokuapp.com/dropdown");
         }
         @AfterClass
-        public static void tearDown(){
-             driver.quit();
-
+        public static void tearDown() {
+            driver.quit();
         }
         @Test
         public void test(){
