@@ -1,2 +1,4 @@
-package HomeWorks.day07;public class Task01 {
+package HomeWorks.day07;
+
+public class Task01 {
 }
