@@ -15,11 +15,13 @@ public class task02 extends TestBase {
 
         driver.get("https://rangeslider.js.org/ ");
         WebElement sliderButton = driver.findElement(slider);
-        Actions actions= new Actions(driver);
+
+        //Shift 100 units to the right and 100 units to the left on the horizontal axis.
+
         actions
-                .dragAndDropBy(sliderButton,-100,0)
-                .pause(Duration.ofSeconds(2))
                 .dragAndDropBy(sliderButton,100,0)
+                .pause(Duration.ofSeconds(2))
+                .dragAndDropBy(sliderButton,-100,0)
                 .build()
                 .perform();
 
