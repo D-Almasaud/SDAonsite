@@ -1,4 +1,4 @@
-package day09;
+package Day09;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
