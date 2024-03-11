@@ -1,0 +1,6 @@
+2024-03-11 13:02:19 TRACE C03Log4jUseProperties:15 - This is a trace message
+2024-03-11 13:02:19 DEBUG C03Log4jUseProperties:16 - This is a debug message
+2024-03-11 13:02:19 INFO  C03Log4jUseProperties:17 - This is an info message
+2024-03-11 13:02:19 WARN  C03Log4jUseProperties:18 - This is a warn message
+2024-03-11 13:02:19 ERROR C03Log4jUseProperties:19 - This is an error message
+2024-03-11 13:02:19 FATAL C03Log4jUseProperties:20 - This is a fatal message
